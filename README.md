@@ -28,7 +28,8 @@ This repository is aimed at developers who are starting with Flutter and want a 
 Before using the examples in this repository, make sure you have:
 
 - Flutter installed: https://docs.flutter.dev/get-started/install
-- An editor configured for Flutter, such as VS Code or Android Studio
+- VS Code configured with the Flutter and Dart extensions
+- Android Studio installed for Android SDK management and emulator support
 - A device emulator or physical device for testing
 
 Useful commands:
