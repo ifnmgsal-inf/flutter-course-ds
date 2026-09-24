@@ -54,7 +54,7 @@ flutter run
 
 - Official Flutter documentation: https://docs.flutter.dev/
 - Flutter cookbook: https://docs.flutter.dev/cookbook
-- Dart language overview: https://dart.dev/guides
+- Dart language overview: https://dart.dev/language
 
 ## Repository goal
 
