@@ -59,4 +59,4 @@ flutter run
 
 ## Repository goal
 
-The purpose of this repository is to become a simple learning base for Flutter studies, with content that helps junior developers understand the fundamentals required to build apps.
+The purpose of this repository is to provide a simple learning base for Flutter studies, with content that helps junior developers understand the fundamentals required to build apps.
