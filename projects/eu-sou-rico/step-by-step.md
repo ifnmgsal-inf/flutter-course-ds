@@ -148,3 +148,36 @@ void main() {
   ));
 }
 ```
+10. Challenge: put the image in the center of the screen
+
+Desafio: coloque a imagem no centro da tela
+
+11. Solution to the challenge
+```diff
+-      body: Image(image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJ4IZbkwwyJD4dq7MObC7x1gpYN0xVkTOV_X9T9ZCMQ&s=10'),)
++      body: Center(
++        child: Image(image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJ4IZbkwwyJD4dq7MObC7x1gpYN0xVkTOV_X9T9ZCMQ&s=10'),)
++      )
+```
+
+12. Working with local images. 
+
+12.1. Create a folder named ```images``` in the root of the project.
+
+12.2 Copy image [rubi.png](https://github.com/polimorfismo/assets-curso-flutter-e-dart/blob/main/imagens/rubi.png) inside the newly created ```images``` folder.
+
+12.3 Open file ```pubspec.yaml``` for edition.
+
+12.4 Search for instructions on how **To add assets to your application** and change the code as follows:
+```yaml
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/rubi.png
+  #   - images/a_dot_ham.jpeg
+```
