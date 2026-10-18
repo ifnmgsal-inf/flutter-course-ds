@@ -12,7 +12,7 @@ flutter create . --platforms web
 flutter run -d chrome
 ```
 
-2. erase class MyApp, leaving only the following source code:
+2. Erase all classes, leaving only the following source code:
 ```dart
 import 'package:flutter/material.dart';
 
