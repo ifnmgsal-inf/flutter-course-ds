@@ -1,7 +1,16 @@
 # App - Eu Sou Rico
 ### Step by step to build the app
 1. create a new flutter project
-```flutter create eu_sou_rico```
+```bash
+flutter doctor
+flutter create eu_sou_rico
+cd eu_sou_rico
+```
+To run in a web browser (optional)
+```bash
+flutter create . --platforms web
+flutter run -d chrome
+```
 
 2. erase class MyApp, leaving only the following source code:
 ```dart
