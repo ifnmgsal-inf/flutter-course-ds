@@ -41,6 +41,19 @@ cd my_first_app
 flutter run
 ```
 
+## Creating an app to be executed in a web browser, e.g.: Chrome
+
+This is very useful if you are having problems to run simulators (Android Studio and/or XCode)
+
+Commands:
+
+```bash
+flutter create my_app
+cd my_app
+flutter create . --platforms web
+flutter run -d chrome
+```
+
 ## Suggested topics for study
 
 - Flutter SDK and project structure
