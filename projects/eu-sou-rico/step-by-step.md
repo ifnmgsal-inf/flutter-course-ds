@@ -67,9 +67,6 @@ void main() {
       appBar: AppBar(
         title: Text('Eu Sou Rico'),
       ),
-      body: const Center(
-        child: Text('Welcome to Eu Sou Rico'),
-      ),
     ),
   ));
 }
@@ -88,16 +85,66 @@ void main() {
         title: Text('Eu Sou Rico', 
           style: TextStyle(
             fontSize: 24,
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.normal,
             color: Colors.white,
           ),
         ),
       ),
-      body: const Center(
-        child: Text('Welcome to Eu Sou Rico'),
+    ),
+  ));
+}
+```
+
+7. **Challenge**: consult the documentation for the Scaffold widget and figure out how to add a blue gray color to the screen's white background (not the app bar).
+
+[Scaffold class](https://api.flutter.dev/flutter/material/Scaffold-class.html)
+
+Desafio: consulte a documentação do widget Scaffold e descruba como colocar uma cor cinza azulado no lugar do fundo branco da tela (não na appbar).
+
+8. Solution to challenge:
+```diff
+void main() {
+  runApp(MaterialApp(
+    title: 'Eu Sou Rico',
+    home: Scaffold(
++     backgroundColor: Colors.blueGrey,
+      appBar: AppBar(
+        backgroundColor: Colors.blueGrey[900],
+        title: Text('Eu Sou Rico', 
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.normal,
+            color: Colors.white,
+          ),
         ),
       ),
     ),
-  );
+  ));
+}
+```
+
+9. Adding a network image to the body of the Scaffold
+
+You can go to Google an type 'image' to get any image on the web. Open the selected image in a new tab and copy the url.
+
+```dart
+void main() {
+  runApp(MaterialApp(
+    title: 'Eu Sou Rico',
+    home: Scaffold(
+      backgroundColor: Colors.blueGrey,
+      appBar: AppBar(
+        backgroundColor: Colors.blueGrey[900],
+        title: Text('Eu Sou Rico', 
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.normal,
+            color: Colors.white,
+          ),
+        ),
+      ),
+      body: Image(image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJ4IZbkwwyJD4dq7MObC7x1gpYN0xVkTOV_X9T9ZCMQ&s=10'),)
+    ),
+  ));
 }
 ```
