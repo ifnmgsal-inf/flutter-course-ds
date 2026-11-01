@@ -181,3 +181,13 @@ flutter:
     - images/rubi.png
   #   - images/a_dot_ham.jpeg
 ```
+
+12.5 The command ```flutter pub get``` synchronizes the application with the new ```pubspec.yaml```. VS Code runs it automatically after you save the file ```pubspec.yaml```.
+
+13. Code challenge: Create an app called __Eu Sou Desenvolvedor__, similar to "Eu Sou Rico". Choose your own image.
+
+13.1 Web pages with free assets ready to use:
+- [Icons8](https://icons8.com/)
+- [Vecteezy](https://www.vecteezy.com/)
+
+14. The End
