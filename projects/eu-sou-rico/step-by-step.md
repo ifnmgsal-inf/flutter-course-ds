@@ -184,10 +184,34 @@ flutter:
 
 12.5 The command ```flutter pub get``` synchronizes the application with the new ```pubspec.yaml```. VS Code runs it automatically after you save the file ```pubspec.yaml```.
 
-13. Code challenge: Create an app called __Eu Sou Desenvolvedor__, similar to "Eu Sou Rico". Choose your own image.
+13. Use the local image instead of the image from the internet:
+```diff
+void main() {
+runApp(MaterialApp(
+    title: 'Eu Sou Rico',
+    home: Scaffold(
+      backgroundColor: Colors.blueGrey,
+      appBar: AppBar(
+        backgroundColor: Colors.blueGrey[900],
+        title: Text('Eu Sou Rico', 
+          style: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.normal,
+            color: Colors.white,
+          ),
+        ),
+      ),
++      body: Image(image: AssetImage('images/rubi.png'),)      
+-      body: Image(image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJ4IZbkwwyJD4dq7MObC7x1gpYN0xVkTOV_X9T9ZCMQ&s=10'),)
+    ),
+  ));
+}
+```
 
-13.1 Web pages with free assets ready to use:
+14. Code challenge: Create an app called __Eu Sou Desenvolvedor__, similar to "Eu Sou Rico". Choose your own image.
+
+14.1 Web pages with free assets ready to use:
 - [Icons8](https://icons8.com/)
 - [Vecteezy](https://www.vecteezy.com/)
 
-14. The End
+15. The End
