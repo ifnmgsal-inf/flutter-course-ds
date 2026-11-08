@@ -214,4 +214,6 @@ runApp(MaterialApp(
 - [Icons8](https://icons8.com/)
 - [Vecteezy](https://www.vecteezy.com/)
 
-15. The End
+15. Complete source code: [github.com/ifnmgsal-inf/flutter-ds-eu-sou-rico](https://github.com/ifnmgsal-inf/flutter-ds-eu-sou-rico)
+
+16. The End
